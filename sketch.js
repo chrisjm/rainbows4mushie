@@ -249,31 +249,31 @@ function Shell(pos, vel, type, sparkTrail = false) {
     if (this.type == "split") {
       // this.drawSparks(30, 3, 5, 3, 8, "writer");
       // this.drawSparks(10, 3, 5, 3, 6, "sparkr");
-      this.drawRainbows(10, 3, 5, 3, 8);
-      this.drawUnicorns(8, 3, 5, 3, 6, "dabbing");
+      this.drawRainbows(30, 3, 5, 3, 8);
+      this.drawUnicorns(10, 3, 5, 3, 6, "dabbing");
     } else if (this.type == "burst") {
       // this.drawSparks(60, 0, 6, 3, 8, "sparkr");
-      this.drawUnicorns(5, 3, 5, 3, 6, "dabbing");
-      this.drawUnicorns(5, 3, 5, 3, 6, "baby");
-      this.drawUnicorns(5, 5, 10, 3, 6, "flying1");
-      this.drawUnicorns(5, 5, 10, 3, 6, "flying2");
-      this.drawRainbows(5, 3, 5, 3, 6);
+      this.drawUnicorns(20, 3, 5, 3, 6, "dabbing");
+      this.drawUnicorns(20, 3, 5, 3, 6, "baby");
+      this.drawUnicorns(20, 5, 10, 3, 6, "flying1");
+      this.drawUnicorns(20, 5, 10, 3, 6, "flying2");
+      this.drawRainbows(20, 3, 5, 3, 6);
     } else if (this.type == "double") {
       // this.drawSparks(90, 3, 5, 2, 4);
       // this.drawSparks(90, 0.5, 2, 4, 6, "writer");
-      this.drawUnicorns(10, 3, 5, 3, 6, "dabbing");
-      this.drawUnicorns(10, 3, 5, 3, 6, "flying2");
-      this.drawRainbows(20, 5, 15, 3, 6);
+      this.drawUnicorns(20, 3, 5, 3, 6, "dabbing");
+      this.drawUnicorns(20, 3, 5, 3, 6, "flying2");
+      this.drawRainbows(50, 3, 7, 3, 6);
     } else if (this.type == "mega") {
       // this.drawSparks(600, 0, 8, 3, 8);
-      this.drawUnicorns(500, 0, 10, 3, 8, "dabbing");
+      this.drawUnicorns(500, 0, 15, 2, 5, "dabbing");
     } else if (this.type == "writer") {
       // this.drawSparks(100, 0, 5, 1, 3, "writer");
-      this.drawUnicorns(100, 0, 5, 1, 3, "flying1");
-      this.drawRainbows(100, 0, 5, 1, 3);
+      this.drawUnicorns(50, 0, 5, 1, 3, "flying1");
+      this.drawRainbows(50, 0, 5, 1, 3);
     } else if (this.type == "simple") {
       // this.drawSparks(100, 0, 5, 1, 3);
-      this.drawUnicorns(100, 0, 5, 1, 3, "dabbing");
+      this.drawUnicorns(75, 0, 5, 1, 3, "dabbing");
       this.drawRainbows(25, 3, 5, 3, 6);
     } else if (this.type == "pent") {
       let baseDir = random(0, TWO_PI);
@@ -299,16 +299,16 @@ function Shell(pos, vel, type, sparkTrail = false) {
     } else if (this.type == "comet") {
       let baseDir = random(0, TWO_PI);
       // this.drawSparks(10, 3, 7, 3, 8, "sparkr", baseDir + (2 / 3) * PI, 128);
-      this.drawUnicorns(10, 3, 7, 3, 8, "dabbing", baseDir + (2 / 3) * PI, 128);
+      this.drawUnicorns(10, 3, 7, 3, 8, "flying1", baseDir + (2 / 3) * PI, 128);
       this.drawRainbows(10, 3, 7, 3, 8, "default", baseDir + (2 / 3) * PI, 128);
 
       // this.drawSparks(10, 3, 7, 3, 8, "sparkr", baseDir + (4 / 3) * PI, 128);
-      this.drawUnicorns(10, 3, 7, 3, 8, "dabbing", baseDir + (4 / 3) * PI, 128);
+      this.drawUnicorns(10, 3, 7, 3, 8, "flying1", baseDir + (4 / 3) * PI, 128);
       this.drawRainbows(10, 3, 7, 3, 8, "default", baseDir + (4 / 3) * PI, 128);
 
       // this.drawSparks(10, 3, 7, 3, 8, "sparkr", baseDir + (6 / 3) * PI, 128);
-      this.drawUnicorns(10, 3, 7, 3, 8, "dabbing", baseDir + (4 / 3) * PI, 128);
-      this.drawRainbows(10, 3, 7, 3, 8, "default", baseDir + (4 / 3) * PI, 128);
+      this.drawUnicorns(10, 3, 7, 3, 8, "flying1", baseDir + (6 / 3) * PI, 128);
+      this.drawRainbows(10, 3, 7, 3, 8, "default", baseDir + (6 / 3) * PI, 128);
 
       // this.drawSparks(200, 0, 8, 3, 8, "writer");
     }
